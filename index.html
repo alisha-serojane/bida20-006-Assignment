@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Of Paris</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/parissymbol.jpg" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Events.html">EVENTS</a></li>
+            <li><a href="lifestyle.html">LIFESTYLE</a></li>
+            <li><a hef="Connect.html">CONNECT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="ShowMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>City Of Paris</h1>
+        <p>
+          A major European city and a global center for art, fashion, gastronomy and culture
+          <br/> Its 19th-century city scape is crisscrossed by wide boulevards and the River Seine
+        </p>
+        <a href="About.html" class="hero-btn">Visit Us To Know More</a>
+      </div>
+    </section>
+
+  
+    <!------------Attractions----------->
+
+    <section class="attractions">
+      <h1>Beauty In Paris</h1>
+      <p>Paris has so many places of interest, making it difficult to compress down to a reasonable number. </p>
+
+      <div class="row">
+        <div class="attractions-col">
+          <img src="images/tower.jpg" />
+          <h3>The Eiffel Tower</h3>
+          <p>
+            The Eiffel Tower is a historical landmark in the heart of Paris. It's frequently featured as a backdrop in movies and a variety of TV shows. The wrought-iron tower is often labelled as one of the world’s most romantic places to visit.
+          </p>
+        </div>
+        <div class="attractions-col">
+          <img src="images/museum.jpg" />
+          <h3>Louvre museum</h3>
+          <p>
+            It seems that everything’s over the top at this former royal palace, now the most famous French museum. 
+            From paintings to sculptures and from archaeological finds to drawings, 
+            The Louvre has 35,000 works of art plus over 350,000 objects on display. 
+          </p>
+        </div>
+        <div class="attractions-col">
+          <img src="images/disneyland.jpg" />
+          <h3>Disneyland Paris</h3>
+          <p>
+            Disneyland Paris is an iconic theme park and resort in the small French town of Chessy.
+            Located just 40 minutes out of Paris city centre, the park is known as the most visited theme park in Europe.
+            Disneyland Paris is a must-visit for kids and adult fans of Disney, Pixar, and even Star Wars.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-------Reviews--------->
+
+    <section class="Reviews">
+      <h1>Reviews</h1>
+      <p><h4> <i> What The Nation Has to Say About The City of Love... </i></h4></p>
+
+       <div class="row">
+         <div class="Reviews-col"> 
+          <img src="images/user1.jpg" />
+          <div>
+            <p>
+              Paris is a large and complex place, but one that can be easily enjoyed if you know what you’re doing. 
+              The city has a good public transport system and a wealth of opportunities to enjoy the unique culture and 
+              atmosphere of the French capital, but it helps to know where you’re going and what you’re doing before you hit the streets. 
+            <h3>Alisha Serojane</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+
+            </p>
+          </div>       
+         </div>
+           <div class="Reviews-col"> 
+          <img src="images/user2.jpg" />
+          <div>
+            <p>
+              What a place, the history, architecture and culture is wonderful. So many
+               sites to see, one more amazing then the next. A must see if you are going to visit the great
+                cities of the world.  Exceptional food and service, in and around the Rue Cler area amazed us in both brasseries and cafes
+                .There were just too many to name. Paris is the dining capitol of the world.
+            <h3>Tumiso Basiamang</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            </p>
+          </div>       
+         </div>
+       </div>
+    </section>
+
+    <!-------------Call To Action-------------------->
+
+    <section class="cta">
+      <h1>If you want to visit our fascinating city <br> at any time, reach us on the button below. </h1>
+      <a href="" class="hero-btn">CONTACT US</a>
+
+    </section>
+
+     <!-------------Footer-------------------->
+
+     <section class="footer">
+       <h2><i>About Us.</i></h2>
+       <p>Visitors flock to Paris from every corner of the globe for a taste of Europe's resplendent past<br> Let a Paris city break whisk you 
+            away on a journey into a wealth of history, haute cuisine, and fine arts.
+       </p>
+       <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+       </div>
+
+     </section>
+
+    <!------JavaScript For Toggle Menu------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function ShowMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

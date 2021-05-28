@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Of Paris</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/parissymbol.jpg" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Events.html">EVENTS</a></li>
+            <li><a href="lifestyle.html">LIFESTYLE</a></li>
+            <li><a href="Connect.html">CONNECT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="ShowMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+  <!-----Form----->
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>Fairgrounds,office park</h5>
+              <p>Plot 50661,France</p>
+            </span>
+          </div>
+          <br />
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+267 72923742</h5>
+              <p>Monday to Friday,8AM to 5PM</p>
+            </span>
+          </div>
+          <br />
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>paris.city@gmail.com</h5>
+              <p>Email us your query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="Thank you.html">
+            <input type="text" placeholder="Enter your first name" />
+            <input type="text" placeholder="Enter your last name" />
+            <input type="email" placeholder="Enter your email address" required />
+            <input type="text" placeholder="Enter your country" required />
+            <input type="text" placeholder="Enter your region" />
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </a>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-------------Footer-------------------->
+
+    <section class="footer">
+      <h2><i>About Us.</i></h2>
+      <p>Visitors flock to Paris from every corner of the globe for a taste of Europe's resplendent past<br> Let a Paris city break whisk you 
+        away on a journey into a wealth of history, haute cuisine, and fine arts.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+    </section>
+
+    <!------JavaScript For Toggle Menu------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function ShowMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

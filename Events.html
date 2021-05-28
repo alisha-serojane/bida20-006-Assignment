@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Of Paris</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/parissymbol.jpg" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Events.html">EVENTS</a></li>
+            <li><a href="lifestyle.html">LIFESTYLE</a></li>
+            <li><a href="Connect.html">CONNECT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="ShowMenu()"></i>
+      </nav>
+      <h1>Fantastic Occasions</h1>
+    </section>
+
+    <!------------Upcoming Events----------->
+
+    <section class="attractions">
+      <h1>Upcoming Events</h1>
+      <h4> <i> These are the annual events in Paris you must get down to..</i> </h4>
+      
+      <div class="row">
+        <div class="attractions-col">
+          <img src="images/bastille day.jpg" />
+          <h3>Bastille Day</h3>
+          <p>
+            On July 14 France marks the storming of the Bastille 
+            prison – a turning point in the French Revolution. In the morning 
+            crowds gather to watch a military parade along the Champs-Élysées.
+            Come evening, the Champ de Mars throngs with up to a million spectators 
+            as fireworks are set off from the base of the Eiffel Tower. 
+          </p>
+        </div>
+        <div class="attractions-col">
+          <img src="images/horse race.jpg" />
+          <h3>Arc de Triomphe Horse Race</h3>
+          <p>
+            Held at the Hippodrome de Longchamp to the west of Paris, 
+            the Arc de Triomphe Horse Race is one of the most prestigious racing events 
+            in Europe. With €5million in prize money, the event has been a holy grail for 
+            the world’s premier jockeys since its inauguration in 1920. Don’t fancy dolling up? 
+            Fortunately for you, the dress code is ‘laissez-faire’.
+          </p>
+        </div>
+        <div class="attractions-col">
+          <img src="images/Masquerade Ball.jpg" />
+          <h3>Versailles Masquerade Ball</h3>
+          <p>
+            Aiming to recreate the decadent grandeur of one of Louis XIV’s great banquets, 
+            the Versailles Masquerade Ball is truly unforgettable (and, frankly, your wallet won’t forget it either). 
+            Held in the magnificent Palace of Versailles grounds, the ball’s dress code is full baroque costume 
+            – including masks. Marie Antoinette-style dresses and 18th-century gentlemen’s attire are available 
+            for rent.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-------------Footer-------------------->
+
+    <section class="footer">
+      <h2><i>About Us.</i></h2>
+      <p>Visitors flock to Paris from every corner of the globe for a taste of Europe's resplendent past<br> Let a Paris city break whisk you 
+        away on a journey into a wealth of history, haute cuisine, and fine arts.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+    </section>
+
+    <!------JavaScript For Toggle Menu------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function ShowMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

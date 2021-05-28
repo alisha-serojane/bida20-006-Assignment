@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Of Paris</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/parissymbol.jpg" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About.html">ABOUT</a></li>
+            <li><a href="Events.html">EVENTS</a></li>
+            <li><a href="lifestyle.html">LIFESTYLE</a></li>
+            <li><a href="Connect.html">CONNECT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="ShowMenu()"></i>
+      </nav>
+      <h1>Lifestyle & Culture</h1>
+    </section>
+
+    <!-------------Lifestyle Content------------>
+
+    <section class="attractions">
+      <h1>Beauty In Paris</h1>
+      <p>Paris has so many places of interest, making it difficult to compress down to a reasonable number. </p>
+
+      <div class="row">
+        <div class="attractions-col">
+          <img src="images/Petite Ceinture.jpg" />
+          <h3>Petite Ceinture</h3>
+          <p> the Petite Ceinture is an old railway line that once allowed freight trains to travel around 
+            the French capital. Although some stretches are still in use, the line has mostly come to a halt
+             and instead has given way to a multitude of welcome initiatives. Almost invisible from the road, 
+             built part up high and part underground, the line has a café here (La Gare in the 16th arrondissement)
+              and a canteen there (La Recyclerie in the 18th arrondissement),</p>
+        </div>
+        <div class="attractions-col">
+          <img src="images/cathedral.jpg" />
+          <h3>Cathedral Church</h3>
+          <p>Notre Dame Cathedral overlooks the Seine River from the southeastern tip of Île de la Cité.
+             It’s one of the largest church buildings in the world and an exceptional example of French
+              Gothic architecture. From the important Catholic relics of the cathedral treasury to the 
+              splendid gargoyles and sculptures of the cathedral towers</p>
+        </div>
+        <div class="attractions-col">
+          <img src="images/Marché des Enfants Rouges.jpg" />
+          <h3>Marché des Enfants Rouges</h3>
+          <p>Le Marché des Enfants Rouges (the Red Children Market) owes its quirky name to the 
+            fact it was an orphanage which dressed its children in red during the 16th century. 
+            It’s the oldest covered markets in Paris and one of the most popular. Here, you’ll find food
+             stalls selling dishes from Italy, Africa, Lebanon – basically, from all around the world. The historical 
+             importance of the place makes this market truly atmospheric. </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="attractions">
+      
+      <div class="row">
+        <div class="attractions-col">
+          <img src="images/montmartre1.jpg" />
+          <h3>Montmartre</h3>
+          <p>Montmartre is one of the most picturesque districts in the city. It’s a quaint
+            neighbourhood that feels like a village in a big city. Built on a hill, it has the
+            splendid Sacré-Coeur Basilica as its centrepiece. Famous for its artistic scene
+            that still attracts painters, musicians and writers.</p>
+        </div>
+        <div class="attractions-col">
+          <img src="images/museum.jpg" />
+          <h3>Louvre museum</h3>
+          <p>It seems that everything’s over the top at this former royal palace, now the most famous French museum. 
+            From paintings to sculptures and from archaeological finds to drawings, 
+            The Louvre has 35,000 works of art plus over 350,000 objects on display.</p>
+        </div>
+        <div class="attractions-col">
+          <img src="images/La Piscine Paris.jpg" />
+          <h3>La Piscine Paris</h3>
+          <p>La Piscine Paris is a store chain specialising in brand-name clothing, shoes and accessories
+             for men and women. From Dior to Pirelli, and from Versace to Barbara Bui, you’ll find first-class
+              products sold at up to 90% discount in the 6 branches of La Piscine Paris. The largest store of the 
+              chain is La Piscine Odéon located on Rue de l'Ancienne Comédie.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-------------Footer-------------------->
+
+    <section class="footer">
+      <h2><i>About Us.</i></h2>
+      <p>Visitors flock to Paris from every corner of the globe for a taste of Europe's resplendent past<br> Let a Paris city break whisk you 
+        away on a journey into a wealth of history, haute cuisine, and fine arts.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+      </div>
+    </section>
+
+    <!------JavaScript For Toggle Menu------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function ShowMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
